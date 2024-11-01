@@ -27,6 +27,10 @@ export const NavBar = styled.header`
     background: ${(props) => props.theme.colors.quaternary};
     width: 100vw;
     height: 112px;
+    @media (max-width: 600px) {
+    margin: 0px 35px; 
+    
+  }
 `;
 
 export const FirstLine = styled.div`
@@ -35,8 +39,10 @@ export const FirstLine = styled.div`
     justify-content: space-between;
     margin: 0px 135px 0px 135px;
     align-content: center;
-    @media (max-width: 600px) {
-    margin: 0px 35px 0px 35px;
+  @media (max-width: 600px) {
+    margin: 0px 30px;  
+    width: 100vw;
+    
   }
 
   h1{
@@ -60,27 +66,30 @@ export const SecondLine = styled.nav`
     a {
         text-decoration: none;
         color: ${(props) => props.theme.colors.tertiary};
-        position: relative; /* For the colored underline */
+        position: relative; 
         
         &.active {
-            color: ${(props) => props.theme.colors.active}; /* Active color */
+            color: ${(props) => props.theme.colors.active}; 
         }
 
         &::after {
             content: '';
             display: block;
             width: 100%;
-            height: 4px; /* Adjusted thickness of the underline */
-            background: ${(props) => props.theme.colors.linear}; /* Underline color */
+            height: 4px; 
+            background: ${(props) => props.theme.colors.linear}; 
             position: absolute;
             left: 0;
-            bottom: -19px; /* Distance from the text */
-            transform: scaleX(0); /* Initially hidden */
-            transition: transform 0.3s ease; /* Animation effect */
+            bottom: -19px; 
+            transform: scaleX(0); 
+            transition: transform 0.3s ease; 
+          @media (max-width: 600px) {
+            bottom: -22px; 
+            }
         }
 
         &.active::after {
-            transform: scaleX(1); /* Show underline when active */
+            transform: scaleX(1);
         }
     }
 `;
@@ -100,6 +109,12 @@ export const AccountWrapper = styled.aside`
   cursor: pointer;
   font-size: ${(props) => props.theme.fontSize.secondary};  
   }
+
+  button .fa-bell, .fa-gift, .fa-m {
+  @media (max-width: 600px) {
+    display: none;
+    }
+    }
 
   button:hover{
   background: ${(props) => props.theme.colors.secondary};
@@ -124,13 +139,13 @@ export const Button = styled.button`
     font-size: ${(props) => props.theme.fontSize.primary};
   @media (max-width: 900px) and (min-width: 600px) {
     width: 32px;
-    height: 32px;
+    height: 38px;
     top: 97px;
   }
   @media (max-width: 600px) {
-    width: 28px;
-    height: 28px;
-    top: 99px;
+    width: 32px;
+    height: 38px;
+    top: 90px;
     right: 35px;
   }
     
@@ -246,6 +261,10 @@ export const Section1Wrap = styled.section`
   grid-area: 1 / 3 / 2 / 4; 
   position: relative;
   width: 10px;
+  @media (max-width: 600px) {
+  left: -40px;
+  top: -5px;
+  }
 }
 
 
@@ -260,6 +279,9 @@ export const Section1Wrap = styled.section`
   border-radius: 8px;
   height: 100px;
   top: 52px;
+  @media (max-width: 600px) {
+  left: -150px;
+  }
 }
 
 
