@@ -259,7 +259,7 @@ export const Section1Wrap = styled.section`
   padding: 10px 0px;
   border-radius: 8px;
   height: 100px;
-  top: 72px;
+  top: 42px;
 }
 
 
