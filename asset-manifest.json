@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/swivl_test/static/css/main.e6c13ad2.css",
+    "main.js": "/swivl_test/static/js/main.d3672726.js",
+    "static/media/Avatar.png": "/swivl_test/static/media/Avatar.483d5b061ea81b90737d.png",
+    "index.html": "/swivl_test/index.html",
+    "main.e6c13ad2.css.map": "/swivl_test/static/css/main.e6c13ad2.css.map",
+    "main.d3672726.js.map": "/swivl_test/static/js/main.d3672726.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.d3672726.js"
+  ]
+}
